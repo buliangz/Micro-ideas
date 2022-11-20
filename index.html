@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>首页</title>
+    <link rel="icon" type="image/x-icon" href="images/100.5.png">
+    <style type="text/css">
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        body,html{
+            width: 100%;
+            /* height: 100%;*/
+        }
+
+        #OneBody{
+            width: 100%;
+            height: 100%;
+            margin: 0 auto;
+            margin-top: 40px;
+            margin-bottom: 30px;
+        }
+        #InBody{
+            width: 1400px;
+            height: 1130px;
+            margin: 0 auto;
+        }
+        
+        /* 头部图片栏 */
+        #HeadOne{
+            background-image: url(images/gt1.jpg);
+            background-size: 1400px 350px;
+            height: 350px;
+            width: 1400px;      
+            background-repeat: no-repeat;
+            
+            margin: 0 auto; 
+        }
+
+        /* 头部导航栏 */
+        #HeadTwo{
+            width: 1400px;
+            height: 50px;
+            background-color: rgb(218,0,0);
+            margin-top: 15px;
+            color: rgb(255,252,173);
+        }
+        .HeadTwoOne{
+            float: right; 
+            font-size: 20px;
+            line-height: 50px; 
+            margin-right: 47px;
+        }
+        .HeadTwoOne li{
+            float: left; 
+            margin-right: 30px;
+            font-weight: bold;
+            height: 50px;  
+        }
+        .HeadTwoOne a{
+            float: left;
+            line-height: 50px;
+            font-size: 20px;
+            margin-right: 25px;
+            color: rgb(255,252,173);
+        }
+        /* 100标 */
+        #Biao{
+            height: 50px;
+            width: 50px;
+            background-image: url(images/100.43.png);
+            float: left;
+            background-size: 50px 50px;
+            background-repeat: no-repeat;
+            margin-left: 100px;
+        }
+
+        /* 主体栏 */
+        #BodyOne{
+            width: 1400px;
+            height: 650px;
+            margin-top: 15px;
+        }
+        
+        /* 主体左边栏 */
+        #BodyTwo{
+            width: 350px;
+            float: left;
+        }
+        /* 左上 */
+        .BodyTwoOne{
+            width: 350px;
+            height: 355px;
+            background-color: rgb(218,0,0);
+        }
+        /* 左下 */
+        .BodyTwoTwo{
+            width: 350px;
+            height: 280px;
+            margin-top: 15px;
+            background-color: rgb(218,0,0);
+        }
+        .HP{
+            font-size: 20px;
+            line-height: 55px;
+            text-align: center;
+            color: rgb(254,226,117);
+            padding-top: 10px;
+            margin-bottom: 3px;
+        }
+        #BodyTwo_1{
+            width: 300px;
+            height: 355px;
+            margin: auto;
+        }
+        #BodyTwo_2{
+            width: 300px;
+            height: 280px;
+            margin: auto;
+        }
+        #BodyTwo li{
+            text-align: center;
+        }
+        #BodyTwo a{
+            font-size: 18px;
+            line-height: 35px;
+            color: rgb(253, 238, 175);
+        }
+
+        /* 主体右边栏 */
+        #BodyThree{
+            width: 1035px;
+            height: 650px;
+            float: right;
+            /* background-color: turquoise; */
+        }
+        .imgss{
+            height: 650px;
+            width: 1035px;
+        }
+        .left-right{
+            width: 45px;
+            height: 55px;
+        }
+        
+        /* 底部注释栏 */
+        #FootOne{
+            height: 35px;
+            width: 1400px;
+            background-color: rgb(255,40,3);
+            margin-top: 15px;
+        }
+        .FootTwo{
+            height: 35px;
+            width: 1100px;
+            margin: 0 auto ;
+        }
+        #FootOne p{
+            font-size: 18px;
+            line-height: 35px;
+            float: left;
+            color: rgb(253, 238, 175);
+            margin: 0px 20px;
+        }
+        .FootTwo a{
+            color: rgb(241, 230, 177);
+			
+		}
+        a:link{
+            text-decoration: none;
+        }
+        a:hover{
+        text-decoration: underline;
+        }
+        a:active{
+            color: rgb(254,226,117);
+        }
+        #BodyTwo a:active{
+            color: rgb(254,226,117);
+        }
+        
+
+
+        .picture{
+            position: relative;
+            width: 1035px;
+            height: 650px;
+            margin: 0 auto;
+            /* border: 2px solid rgb(231,127,217); */
+            overflow: hidden;
+        }
+        .active{
+            border: 10px solid #656466;
+        }
+        .arrowhead-left,.arrowhead-right
+        {
+            position: absolute;
+            width: 45px;
+            height: 55px;
+        }
+        .arrowhead-left{
+            left: 20px;
+            top: 40%;
+        }
+        .arrowhead-right{
+            right: 20px;
+            top: 40%;
+        }
+        
+
+    </style>
+</head>
+<body>
+    <div id="OneBody">
+        <div id=InBody>
+            <div id="HeadOne"></div><!--头部图片栏-->
+            <div id=HeadTwo><!--头部导航栏-->
+                <div id="Biao"></div>
+                <dvi class="HeadTwoOne">
+                    <ul type="none">
+                        <li><a href="index.html">首&nbsp&nbsp页</a>|</li>
+                        <li><a href="党的简介.html">党 的 简 介</a>|</li>
+                        <li><a href="党的纲领.html">党 的 纲 领</a>|</li>
+                        <li><a href="历史回顾.html">历 史 回 顾</a>|</li>
+                        <li><a href="功勋人物.html">功 勋 人 物</a>|</li>
+                        <li><a href="关于我们.html">关 于 我 们</a></li>
+                    </ul>
+                </dvi>
+            </div>
+            <div id="BodyOne">
+                <div id="BodyTwo"><!--主体左边-->
+                    <div class="BodyTwoOne">
+                        <div id="BodyTwo_1">
+                            <ul type="none" >
+                                <li><p class="HP">实事新闻<p></li>
+                                <li><a href="“中国共产党始终保持活力”.html">“中国共产党始终保持活力”</a></li>                            
+                                <li><a href="无愧伟大时代  不负人民重托.html">无愧伟大时代 不负人民重托</a></li>
+                                <li><a href="六五环境日国家主场活动在西宁举办.html">六五环境日国家主场活动在西宁举办</a></li>
+                                <li><a href="热点辨析：人工智能拓展就业空间.html">热点辨析：人工智能拓展就业空间</a></li>
+                                <li><a href="“庆祝中国共产党成立100周年青春歌会”在澳门举办.html">“庆祝中国共产党成立100周年青春歌会”在澳门举办</a></li> 
+                                <li><a href="袁隆平院士不仅属于中国，也属于世界.html">袁隆平院士不仅属于中国，也属于世界</a></li>     
+                            </ul>
+                        </div>                       
+                    </div>
+                    <div class="BodyTwoTwo">
+                        <div id="BodyTwo_2">
+                            <ul type="none" >
+                                <li><p class="HP">工作决定<p></li>
+                                <li><a href="在全党开展党史学习教育.html">在全党开展党史学习教育</a></li>
+                                <li><a href="关于表彰全国脱贫攻坚先进个人和先进集体的决定.html">关于表彰全国脱贫攻坚先进个人和先进集体的决定</a></li>
+                                <li><a href="关于授予全国脱贫攻坚楷模荣誉称号的决定.html">关于授予全国脱贫攻坚楷模荣誉称号的决定</a></li>                            
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div id="BodyThree"><!--主体右边栏-->
+                    <div class="picture">
+
+                        <img src="images\21.jpg" class="imgss">
+                        <!-- 箭头 -->
+                        <div class="arrowhead-left" id="al" onclick="al_1();"> 
+                            <img src="images/左-箭头.png" class="left-right" id="left-right_1" onmousemove="max_1()" onmouseout="min_1()" title="上一张">
+                        </div>
+                        <div class="arrowhead-right" id="ar" onclick="ar_1();">
+                            <img src="images/右-箭头.png" class="left-right" id="left-right_2" onmousemove="max_2()" onmouseout="min_2()" title="下一张"> 
+                        </div>
+                    </div>
+                </div>
+            </div> 
+            <div id="FootOne"><!--底部注释栏-->
+                <div class="FootTwo">
+                    <p>网页制作：<a href="关于我们.html" title="关于我们">微创意</a></p>
+                    <p>友情链接：<a href="https://mozixiao01.github.io/" title="点击跳转外部链接">陌子枭</a></p>
+					<p>素材来源：<a href="http://cpc.people.com.cn/" title="点击跳转外部链接">中国共产党新闻网</a>/
+                                <a href="https://baike.baidu.com/" title="点击跳转外部链接">百度百科</a>
+                    </p>
+                    <p>联系我们：<a href="关于我们.html" title="关于我们">3207475457@qq.com</a></p>
+                </div>
+                
+            </div>
+        </div>
+    </div> 
+    <script type="text/javascript">
+
+        function max_1(){
+            document.getElementById("left-right_1").style.width='60px';
+            document.getElementById("left-right_1").style.height="70px";
+        }  
+        function max_2(){
+            document.getElementById("left-right_2").style.width='60px';
+            document.getElementById("left-right_2").style.height="70px";
+        } 
+        function min_1(){
+            document.getElementById("left-right_1").style.width='45px';
+            document.getElementById("left-right_1").style.height="55px";
+        }  
+        function min_2(){
+            document.getElementById("left-right_2").style.width='45px';
+            document.getElementById("left-right_2").style.height="55px";
+        }    
+
+        var getAl = document.getElementById("al");
+        var getAr = document.getElementById("ar");
+        var img = document.getElementsByTagName("img")[0];
+        var pictureArr = ["images/21.jpg","images/biu.jpg", "images/223.jpg", "images/55.jpg", "images/525.png"];
+        var index = 0;
+
+        function al_1(){
+            index --;
+            if(index >= 0)
+            {
+                img.src = pictureArr[index];
+            }
+            else
+            {
+                img.src = pictureArr[pictureArr.length - 1];
+                index = pictureArr.length - 1;              
+            }
+
+        }
+        function ar_1(){
+            index ++;
+            if(index > pictureArr.length - 1)
+            {
+                img.src = pictureArr[index];
+                index = 0;
+            }
+            img.src = pictureArr[index];
+            
+        }
+        setInterval("ar_1()",4000);
+
+    </script> 
+</body>
+</html>
